@@ -1,18 +1,9 @@
 ---
 name: "[Dev-Log]"
-about: Deb-Log
+about: Dev-Log
 title: ''
 labels: ''
 assignees: Yeonlisa
-
----
-
----
-name: Dev-Log
-about: Dev-log
-title: ''
-labels: ''
-assignees: ''
 
 ---
 
