@@ -36,7 +36,7 @@ const MyInfo = (history, {nickname, password}) => {
         setisAuth(false)
       }
     } catch(err) {
-      // console.log(err)
+      console.log(err)
     }
   },[])
 
@@ -69,7 +69,7 @@ const MyInfo = (history, {nickname, password}) => {
         }
       })
       .catch((err) => {
-        // console.error(err);
+        console.error(err);
       });
     }
   };
