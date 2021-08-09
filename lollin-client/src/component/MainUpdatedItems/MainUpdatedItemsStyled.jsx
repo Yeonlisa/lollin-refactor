@@ -149,6 +149,17 @@ export const UpdatedItems = styled.div`
     width: 80%;
   }
 
+  .updatedItem {
+    display: flex;
+    justify-content: center;
+  }
+
+  .itemContent {
+    width: 90%;
+    max-width: 1500px;
+    padding: 1rem 0;
+  }
+
   @media (min-width: 480px) and (max-width: 909px) {
     padding-top: 15rem;
   }

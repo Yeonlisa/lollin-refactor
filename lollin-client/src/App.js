@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { Route, useHistory } from "react-router-dom";
 import MainPage from "./pages/Main/Main.jsx";
 import ItemsDB from "./pages/ItemsDB/ItemsDB.jsx";

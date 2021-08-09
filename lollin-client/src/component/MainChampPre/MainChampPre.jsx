@@ -10,20 +10,20 @@ const server = process.env.REACT_APP_SERVER_URL;
 const MainChampPre = ({ history }) => {
   const [rotaChamp, setRotaChamp] = useState([
     {
-      id: "Rell",
-      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg",
+      id: "Amumu",
+      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
     },
     {
-      id: "Viego",
-      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg",
-    },
-    {
-      id: "Sylas",
-      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
+      id: "Alistar",
+      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
     },
     {
       id: "Sylas",
       img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
+    },
+    {
+      id: "Chogath",
+      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
     },
   ]);
 

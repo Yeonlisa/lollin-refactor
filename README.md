@@ -94,4 +94,4 @@ https://app.gitbook.com/@lollin/s/lollin/ <br />
 ### Server
 ![Img](https://github.com/codestates/Lollin-client/blob/master/Images/Server%20flowchart.png?raw=true)
 ### API
-![Img](https://github.com/codestates/Lollin-client/blob/master/Images/API%20flowchart.png?raw=true)
+![Img](https://github.com/codestates/Lollin-client/blob/master/Images/API%20flowchart.png?raw=true) 

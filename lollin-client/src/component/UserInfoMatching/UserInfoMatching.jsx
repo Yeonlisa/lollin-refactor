@@ -18,7 +18,6 @@ const UserInfoMatching = ({ summonerName, setDefaultPlayer }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [commentValue, setCommentValue] = useState("");
 
-
   const handleUserClick = (participant) => {
     setParticipant(participant);
   };
@@ -72,20 +71,20 @@ const UserInfoMatching = ({ summonerName, setDefaultPlayer }) => {
   };
 
   const handleCommentValue = () => {
-    if(participant) {
-      axios.post('https://lollinserver.link/members/comment',
-      {
-        jwt: sessionStorage.getItem('jwt'),
-        nickname: participant.summonerName,
-        comment: commentValue
-      })
-      .then((res)=>{
-        setCommentValue(res.comment)
-        console.log("코멘트완료")
-      })
-      .catch((err)=>{
-        alert("코멘트불가")
-      })
+    if (participant) {
+      axios
+        .post("https://lollinserver.link/members/comment", {
+          jwt: sessionStorage.getItem("jwt"),
+          nickname: participant.summonerName,
+          comment: commentValue,
+        })
+        .then((res) => {
+          setCommentValue(res.comment);
+          console.log("코멘트완료");
+        })
+        .catch((err) => {
+          alert("코멘트불가");
+        });
     }
   };
 
@@ -136,8 +135,7 @@ const UserInfoMatching = ({ summonerName, setDefaultPlayer }) => {
                 }}
                 onKeyPress={handleReSearchEnter}
                 value={reSearchValue}
-              >
-              </input>
+              ></input>
               <button className="searchBtn" onClick={handleReSearch}>
                 Lollin
               </button>

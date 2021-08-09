@@ -30,16 +30,16 @@ const MainUpdatedItems = ({ history }) => {
 
   useEffect(() => {
     axios
-      .get(`${server}/items/patched2`)
+      .get(`${server}/utils/patchnote`)
+      // .get(`${server}/items/patched2`)
       .then((res) => {
         setNewItemData(res.data);
+        console.log("업데이트 아이템  : ", res);
       })
       .catch((err) => {
         throw err;
       });
   }, []);
-
-  
 
   const handleItemHtml = () => {
     return (
@@ -58,13 +58,15 @@ const MainUpdatedItems = ({ history }) => {
     <UpdatedItems className="updatedItems">
       <div className="textContainer">
         <div className="desc">
-          <div className="descTitle">업데이트 아이템</div>
+          <div className="descTitle">업데이트 챔피언</div>
         </div>
-        <div className="titleWrap">- Updated items</div>
+        <div className="titleWrap">- Updated champion</div>
+      </div>
+      <div className="updatedItem">
+        <img className="itemContent" src={newItemData} alt="nodata" />
       </div>
 
-      {handleItemHtml()}
-   
+      {/* {handleItemHtml()} */}
     </UpdatedItems>
   );
 };
