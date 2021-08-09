@@ -59,7 +59,7 @@ const FooterFixed = () => {
           </Row>
         </Wrapper>
         <Copyright>
-          Copyright 2021. Team Spieler all pictures cannot be copied without
+          Copyright {new Date().getFullYear()}. Team Spieler all pictures cannot be copied without
           permission.
         </Copyright>
       </Container>

@@ -14,26 +14,24 @@ export const Container = styled.div`
 
 export const Logo = styled.a`
   color: #ffbb72;
-  font-weight: bold;
-  font-size: 21px;
   display: flex;
   align-items: center;
   text-decoration: none;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 0;
   height: 100px;
   background-image: url(${FooterLogo});
   background-size: 250px;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     background-image: url(${FooterLogo2});
     height: 150px;
     margin-top: 10px;
     background-size: 100px;
     background-repeat: no-repeat;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 10px;
   }
 `;
@@ -61,7 +59,7 @@ export const Column = styled.div`
 export const Row = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
 
   @media (max-width: 500px) {
     grid-template-columns: 1fr 1fr 1fr;
