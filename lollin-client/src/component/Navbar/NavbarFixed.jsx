@@ -9,6 +9,7 @@ import {
   NavLoginBtn,
   NavSignupBtn,
 } from "./NavbarFixedElements";
+import ProgressBar from "./ProgressBar";
 
 const Navbar = ({
   toggle,
@@ -52,6 +53,7 @@ const Navbar = ({
           )}
         </NavBtn>
       </Nav>
+      <ProgressBar />
     </>
   );
 };
