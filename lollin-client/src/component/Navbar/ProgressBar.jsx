@@ -7,7 +7,7 @@ const Progress = styled.div`
     height: 5px;
     top: 62px;
     left: 0;
-    background-color: #09f8d3;
+    background-color: #c7ea46;
     z-index: 12;
 `;
 
