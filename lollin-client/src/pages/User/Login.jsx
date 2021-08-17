@@ -6,6 +6,7 @@ import useForm from '../../validation/useForm';
 import {
   Container,
   Form,
+  CloseIcon,
   Title,
   Errors,
   LoginBtn,
@@ -18,7 +19,7 @@ import {
 const { Kakao } = window;
 
 const Login = (history, { submitForm, username, password }) => {
-  const { handleChange, values, handleSubmit, errors } = useForm(
+  const { handleChange, values, handleSubmit, errors, handleClose } = useForm(
     submitForm,
     validate
   );
@@ -78,7 +79,7 @@ const Login = (history, { submitForm, username, password }) => {
                 alert('로그인 실패');
               })
               .catch((err) => {
-                // console.error(err);
+                console.error(err);
                 alert('로그인 실패');
               });
           },
@@ -96,46 +97,47 @@ const Login = (history, { submitForm, username, password }) => {
 
   return (
     <>
-      <Container>
-        <Form onSubmit={handleSubmit}>
-          <Title>Login</Title>
-          <InputArea>
-            <LabelName htmlFor="username">ID</LabelName>
+        <Container>
+          <Form onSubmit={handleSubmit}>
+            <CloseIcon onClick={handleClose} />
+            <Title>Login</Title>
+            <InputArea>
+              <LabelName htmlFor="username">ID</LabelName>
+              <br />
+              <InputBox
+                id="username"
+                type="text"
+                name="username"
+                placeholder="Enter your ID"
+                autoComplete="off"
+                value={values.username}
+                onChange={handleChange}
+              />
+              {errors.username && <Errors>{errors.username}</Errors>}
+            </InputArea>
+            <InputArea>
+              <LabelName htmlFor="password">Password</LabelName>
+              <br />
+              <InputBox
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Enter your Password"
+                autoComplete="off"
+                value={values.password}
+                onChange={handleChange}
+              />
+              {errors.password && <Errors>{errors.password}</Errors>}
+            </InputArea>
             <br />
-            <InputBox
-              id="username"
-              type="text"
-              name="username"
-              placeholder="Enter your ID"
-              autoComplete="off"
-              value={values.username}
-              onChange={handleChange}
-            />
-            {errors.username && <Errors>{errors.username}</Errors>}
-          </InputArea>
-          <InputArea>
-            <LabelName htmlFor="password">Password</LabelName>
+            <LoginBtn onClick={handleLogin}>
+              {!isLogin ? 'Login' : 'Succeed!'}
+            </LoginBtn>
             <br />
-            <InputBox
-              id="password"
-              type="password"
-              name="password"
-              placeholder="Enter your Password"
-              autoComplete="off"
-              value={values.password}
-              onChange={handleChange}
-            />
-            {errors.password && <Errors>{errors.password}</Errors>}
-          </InputArea>
-          <br />
-          <LoginBtn onClick={handleLogin}>
-            {!isLogin ? 'Login' : 'Succeed!'}
-          </LoginBtn>
-          <br />
-          <HorizonLine />
-          <KakaoBtn onClick={handleKakao}>Kakao Login</KakaoBtn>
-        </Form>
-      </Container>
+            <HorizonLine />
+            <KakaoBtn onClick={handleKakao}>Kakao Login</KakaoBtn>
+          </Form>
+        </Container>
     </>
   );
 };
