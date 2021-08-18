@@ -17,18 +17,6 @@ const useForm = (callback, validate) => {
       ...values,
       [name]: value,
     });
-    // if(e.target.name === "username" || e.target.name === "nickname") {
-    //   setTimeout(() => {
-    //     axios.get(`https://lollinserver.link/user/check?${e.target.name}=${e.target.value}`)
-    //     .then((res) => {
-    //       if(res.status === 200) {
-    //         validate(200)
-    //       } else if(res.status === 400 || res.status === 409) {
-    //         validate(409)
-    //       }
-    //     })
-    //   }, 1000)
-    // }
   };
 
   const handleSubmit = (e) => {

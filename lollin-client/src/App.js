@@ -113,8 +113,6 @@ function App() {
       <Route
         exact
         path="/champions/detail"
-        // component={ChampDetail}
-        // champPriId={champPriId}
         render={() => <ChampDetail champPriId={champPriId} />}
       />
       <Route exact path="/items/all" component={ItemsDB} />
@@ -140,7 +138,6 @@ function App() {
           <UserInfo history={history} summonerName={summonerName} />
         )}
       />
-
       <FooterFixed />
     </div>
   );
