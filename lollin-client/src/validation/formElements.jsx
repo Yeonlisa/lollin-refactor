@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'; 
+import { FaTimes } from 'react-icons/fa';
 
 export const Container = styled.div`
   margin: 40px auto;
@@ -6,9 +7,9 @@ export const Container = styled.div`
   position: relative;
   border-radius: 10px;
   height: 700px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #121212;
+  display: flex;
+  /* background-color: rgba(0,0,0,0.2); */
+  z-index: 999999;
   
   @media (max-width: 500px) {
     margin-left: 20px;
@@ -18,7 +19,7 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-  background-color: #121212;
+  background-color: rgba(0,0,0,0.8);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,6 +34,18 @@ export const Form = styled.form`
   border-radius: 10px;
 `;
 
+export const CloseIcon = styled(FaTimes)`
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  z-index: 10;
+`;
+
 export const Title = styled.h1`
   font-size: 48px;
   text-align: start;
@@ -43,7 +56,7 @@ export const Title = styled.h1`
 `;
 
 export const InputArea = styled.div`
-  background-color: #121212;
+  background-color: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
   margin-bottom: 0.5rem;
@@ -67,7 +80,7 @@ export const InputBox = styled.input`
   width: 99.2%;
   font-size: 19px;
   border-bottom-color: #fff!important;
-  background-color: #121212;
+  background-color: rgba(0,0,0,0.8);
   color: #fff;
   
   ::placeholder {
@@ -105,7 +118,7 @@ export const KakaoBtn = styled.button`
   height: 50px;
   margin-top: 10px;
   border-radius: 2px;
-  background: #121212;
+  background-color: rgba(0,0,0,0.8);
   outline: none;
   border: none;
   color: #fff;
@@ -114,24 +127,6 @@ export const KakaoBtn = styled.button`
   &:hover {
     cursor: pointer;
     background-color: #ffff00;
-    color: #000;
-  }
-`;
-
-export const NaverBtn = styled.button`
-  width: 81.3%;
-  height: 50px;
-  margin-top: 10px;
-  border-radius: 2px;
-  background: #121212;
-  outline: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #03c75a;
     color: #000;
   }
 `;
@@ -177,7 +172,7 @@ export const LeaveBtn = styled.button`
   height: 50px;
   margin-top: 10px;
   border-radius: 2px;
-  background: #121212;
+  background-color: rgba(0,0,0,0.8);
   outline: none;
   border: none;
   color: #fff;
