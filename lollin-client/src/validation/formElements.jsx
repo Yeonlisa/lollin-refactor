@@ -1,25 +1,53 @@
 import styled from 'styled-components'; 
 import { FaTimes } from 'react-icons/fa';
 
+// export const Wrapper = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   padding-bottom: 15rem;
+// `;
+
+export const BackGround = styled.img`
+  position: absolute;
+  width: 100%;
+  height: 178vh;
+  filter: blur(1.8px);
+  top: 2rem;
+  z-index: 2;
+`;
+
+export const BgSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 178vh;
+  z-index: 3;
+  position: relative;
+  place-items: center;
+  background-color: #0000008f;
+  padding-top: 2rem;
+`;
+
+
 export const Container = styled.div`
-  margin: 40px auto;
+  margin: 100px auto;
   width: 800px;
   position: relative;
   border-radius: 10px;
   height: 700px;
   display: flex;
-  /* background-color: rgba(0,0,0,0.2); */
-  z-index: 999999;
+  z-index: 10;
   
-  @media (max-width: 500px) {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 448px;
+  @media (max-width: 768px) {
+    margin: 50px auto;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 400px;
   }
 `;
 
 export const Form = styled.form`
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0);
   position: absolute;
   top: 50%;
   left: 50%;
