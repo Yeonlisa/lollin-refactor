@@ -1,33 +1,6 @@
 import styled from 'styled-components'; 
 import { FaTimes } from 'react-icons/fa';
 
-// export const Wrapper = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   padding-bottom: 15rem;
-// `;
-
-export const BackGround = styled.img`
-  position: absolute;
-  width: 100%;
-  height: 178vh;
-  filter: blur(1.8px);
-  top: 2rem;
-  z-index: 2;
-`;
-
-export const BgSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 178vh;
-  z-index: 3;
-  position: relative;
-  place-items: center;
-  background-color: #0000008f;
-  padding-top: 2rem;
-`;
-
 
 export const Container = styled.div`
   margin: 100px auto;
@@ -39,9 +12,7 @@ export const Container = styled.div`
   z-index: 10;
   
   @media (max-width: 768px) {
-    margin: 50px auto;
-    /* margin-left: 20px;
-    margin-right: 20px; */
+    margin: 20px auto;
     width: 400px;
   }
 `;

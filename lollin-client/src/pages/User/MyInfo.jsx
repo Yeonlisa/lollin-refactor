@@ -5,6 +5,7 @@ import axios from 'axios';
 import {
   Container,
   Form,
+  CloseIcon,
   Title,
   LabelName,
   UpdateBtn,
@@ -17,7 +18,7 @@ const jwt = require('jsonwebtoken')
 require('dotenv').config();
 
 const MyInfo = (history, {nickname, password}) => {
-  const { handleChange, values, handleNew } = useForm(validate, submitForm);
+  const { handleChange, values, handleNew, handleClose } = useForm(validate, submitForm);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isUpdated, setIsUpdated] = useState(false);
   const [isLeaved, setIsLeaved] = useState(false);
@@ -100,6 +101,7 @@ const MyInfo = (history, {nickname, password}) => {
     <>
       <Container>
         <Form onSubmit={handleNew}>
+          <CloseIcon onClick={handleClose} />
           <Title>My Info</Title>
           <InputArea>
             <LabelName htmlFor="nickname">LoL-Nickname</LabelName>

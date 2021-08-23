@@ -4,8 +4,6 @@ import HorizonLine from '../../modals/HorizonLine';
 import validate from '../../validation/validate';
 import useForm from '../../validation/useForm';
 import {
-  BackGround,
-  BgSection,
   Container,
   Form,
   CloseIcon,
@@ -17,7 +15,6 @@ import {
   LabelName,
   InputBox,
 } from '../../validation/formElements';
-import ContactBg from "../../Images/contactbg.jpeg";
 
 const { Kakao } = window;
 
@@ -100,8 +97,6 @@ const Login = (history, { submitForm, username, password }) => {
 
   return (
     <>
-      <BackGround src={`${ContactBg}`}/>
-      <BgSection>
         <Container>
           <Form onSubmit={handleSubmit}>
             <CloseIcon onClick={handleClose} />
@@ -143,7 +138,6 @@ const Login = (history, { submitForm, username, password }) => {
             <KakaoBtn onClick={handleKakao}>Kakao Login</KakaoBtn>
           </Form>
         </Container>
-        </BgSection>
     </>
   );
 };
