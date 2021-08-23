@@ -93,7 +93,7 @@ export const Copyright = styled.div`
   text-align: end;
   font-size: 13px;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 40px;
 
   @media screen and (max-width: 500px) {
     font-size: 11px;
