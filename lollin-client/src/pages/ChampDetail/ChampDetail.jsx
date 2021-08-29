@@ -44,10 +44,6 @@ const ChampDetail = ({ champPriId }) => {
       if (location.state !== undefined) {
         setResultId(location.state.id);
       }
-
-      // else {
-      //   setResultId(champPriId);
-      // }
     };
     handleResultId();
   }, [location.state]);
@@ -139,10 +135,6 @@ const ChampDetail = ({ champPriId }) => {
           ) : (
             "noData"
           )}
-          {/* <BackImg
-            className="champDbBackImg"
-            src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champPriId}_0.jpg`}
-          /> */}
           <Wrap>
             <RenderArea className="renderWrapper">
               <ChampName className="champDetailNameArea">
@@ -195,15 +187,6 @@ const ChampDetail = ({ champPriId }) => {
                     loop
                   ></ChampSkillWeb>
                 ))}
-                {/* <ChampSkillWeb
-              className="champDetailWebm"
-              src={champData.skillwebm[skillIndex]}
-              width="480px"
-              }}></button>
-              muted
-              autoPlay
-              loop
-            ></ChampSkillWeb> */}
               </SkillsArea>
               <ChampTipsArea>
                 챔피언 플레이 팁!

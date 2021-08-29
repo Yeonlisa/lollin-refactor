@@ -22,7 +22,7 @@ const UserInfo = ({ summonerName }) => {
 	}
 	return (
 		<Container>
-			<BackImg className="userinfobgi" src={`${UserInfoBgi}`} />
+			<BackImg className="userinfobgi" src={`${UserInfoBgi}`} alt="nodata" />
 			<Wrapper>
 				<UserTitle>User Info</UserTitle>
 				<UserContent>
