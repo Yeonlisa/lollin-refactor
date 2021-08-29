@@ -155,7 +155,7 @@ export const UpdatedItems = styled.div`
   }
 
   .itemContent {
-    width: 90%;
+    width: 80%;
     max-width: 1500px;
     padding: 1rem 0;
   }

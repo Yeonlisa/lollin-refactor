@@ -45,7 +45,7 @@ const ItemsDB = () => {
   }, []);
   return (
     <Items className="itemDB">
-      <BackImg className="itemDBbackImg" src={`${ItemsDbBgi}`} />
+      <BackImg className="itemDBbackImg" src={`${ItemsDbBgi}`} alt="nodata" />
 
       <Wrapper>
         <ItemTitle className="itemTitle">Item</ItemTitle>

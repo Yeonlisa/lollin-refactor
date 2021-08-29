@@ -47,7 +47,7 @@ const ChampDB = ({ handleChampPriId }) => {
 
   return (
     <ChampDBcontainter className="champDBcontainter">
-      <BackImg className="champDBbackImg" src={`${ChampDbBgi}`} />
+      <BackImg className="champDBbackImg" src={`${ChampDbBgi}`} alt="no data" />
 
       <Wrapper>
         <ChampDbTiltle className="champDBtitle">Champions</ChampDbTiltle>

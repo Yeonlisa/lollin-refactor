@@ -1,5 +1,4 @@
 import React from "react";
-
 import { ItemsFilter, CheckBoxArea } from "./ItemsDbFilterStyled.jsx";
 
 

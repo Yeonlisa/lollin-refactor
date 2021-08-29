@@ -235,12 +235,12 @@ export const ChampRecommendedBuild = styled.div`
   .runeSearchBtn {
     display: flex;
     position: absolute;
-    height: 21px;
+    height: 22px;
     top: 0;
     right: 0;
     margin-right: 1px;
     margin-top: 6px;
-    padding: 0 6px;
+    padding: 3px 6px;
     border: none;
     background-color: #ffbb00;
     border-radius: 2px;

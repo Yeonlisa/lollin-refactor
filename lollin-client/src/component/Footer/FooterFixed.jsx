@@ -49,8 +49,8 @@ const FooterFixed = () => {
               <FooterLink 
                 href="https://github.com/Yeonlisa" 
                 target="_blank" rel="noopener"
-                Yeon HoJin
               >
+                Yeon HoJin
               </FooterLink>
               <FooterLink
                 href="https://github.com/hunhunseunghun"
