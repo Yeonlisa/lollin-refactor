@@ -11,19 +11,19 @@ const MainChampPre = ({ history }) => {
   const [rotaChamp, setRotaChamp] = useState([
     {
       id: "Amumu",
-      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
     },
     {
       id: "Alistar",
-      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
     },
     {
       id: "Sylas",
-      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
     },
     {
       id: "Chogath",
-      img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
+      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
     },
   ]);
 

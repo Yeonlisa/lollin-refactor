@@ -110,6 +110,5 @@ LollinBtn.defaultProps = {
   buttonText: "사랑받는 롤린이의 교과서, Lollin!",
 };
 
-// "#e0ad0b",
 
 export default LollinBtn;

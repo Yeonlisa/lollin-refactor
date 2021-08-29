@@ -52,7 +52,7 @@ const ChampDbList = ({ champData, searchText, handleChampPriId }) => {
               <ImageContainer className="imageContainer">
                 <img
                   className="champImg"
-                  src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${ele[1].id}_0.jpg`}
+                  src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${ele[1].id}_0.jpg`}
                   alt="no images"
                   key={ele[1].image.full}
                 />

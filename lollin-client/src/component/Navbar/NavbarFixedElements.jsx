@@ -16,7 +16,7 @@ export const Nav = styled.nav`
   right: 0;
 `;
 
-export const Logo = styled(Link)`
+export const HeadLogo = styled(Link)`
   display: flex;
   align-items: center;
   justify-self: start;

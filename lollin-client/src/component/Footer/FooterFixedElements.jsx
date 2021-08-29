@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import FooterLogo from "../../Images/logo3.png";
 import FooterLogo2 from "../../Images/logo4.png";
+import { Link } from "react-router-dom";
 
-export const Container = styled.div`
+export const Container = styled.footer`
   padding: 20px 10px;
   background: #000;
   color: #fff;
@@ -12,7 +13,7 @@ export const Container = styled.div`
   right: 0;
 `;
 
-export const Logo = styled.a`
+export const FootLogo = styled(Link)`
   color: #ffbb72;
   display: flex;
   align-items: center;

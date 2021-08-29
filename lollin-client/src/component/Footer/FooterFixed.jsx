@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Logo,
+  FootLogo,
   Container,
   Wrapper,
   Column,
@@ -16,18 +16,18 @@ const FooterFixed = () => {
       <Container>
         <Wrapper>
           <Row>
-              <Logo />
+              <FootLogo to="/" />
             <Column>
               <Title>About Us</Title>
               <FooterLink
                 href="https://github.com/codestates/Lollin-client"
-                target="_blank"
+                target="_blank" rel="noopener"
               >
                 Client repository
               </FooterLink>
               <FooterLink
                 href="https://github.com/codestates/Lollin-server"
-                target="_blank"
+                target="_blank" rel="noopener"
               >
                 Server repository
               </FooterLink>
@@ -36,22 +36,25 @@ const FooterFixed = () => {
               <Title>Team Spieler</Title>
               <FooterLink
                 href="https://github.com/whwnddnwhwnd"
-                target="_blank"
+                target="_blank" rel="noopener"
               >
                 Cho JungWoo
               </FooterLink>
               <FooterLink
                 href="https://github.com/leehojun0314"
-                target="_blank"
+                target="_blank" rel="noopener"
               >
                 Lee HoJun
               </FooterLink>
-              <FooterLink href="https://github.com/Yeonlisa" target="_blank">
+              <FooterLink 
+                href="https://github.com/Yeonlisa" 
+                target="_blank" rel="noopener"
                 Yeon HoJin
+              >
               </FooterLink>
               <FooterLink
                 href="https://github.com/hunhunseunghun"
-                target="_blank"
+                target="_blank" rel="noopener"
               >
                 Yoo SeungHun
               </FooterLink>

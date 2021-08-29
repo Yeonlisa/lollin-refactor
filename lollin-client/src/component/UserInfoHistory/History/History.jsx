@@ -84,15 +84,11 @@ const History = ({ historyData, isLoading }) => {
                   >
                     <div className="imgWrapper">
                       <img
-                        src={`http://ddragon.leagueoflegends.com/cdn/${apiVer}/img/champion/${ele.championName}.png`}
+                        src={`https://ddragon.leagueoflegends.com/cdn/${apiVer}/img/champion/${ele.championName}.png`}
                         alt="no img"
                         className="img"
                       />
                       <div className="champName">{ele.championName}</div>
-                      {/* <img src="" alt="" className="spell1" />
-                      <img src="" alt="" className="spell2" />
-                      <img src="" alt="" className="rune1" />
-                      <img src="" alt="" className="rune2" /> */}
                     </div>
                     <div className="mainData">
                       <div className="pastTime">
@@ -165,104 +161,3 @@ const History = ({ historyData, isLoading }) => {
 };
 
 export default History;
-
-// switch (isLoading) {
-//   case null: {
-//     return (
-//       <Container>
-//         <div className="topWrap">
-//           <div className="name">{summonerResult}</div>
-
-//           <section className="searchArea">
-//             <input
-//               type="text"
-//               className="searchInput"
-//               placeholder="소환사 검색.."
-//               onChange={handleInputVal}
-//               onKeyPress={handleInputVal}
-//             />
-//             <button className="searchBtn" onClick={handleSearchName}>
-//               Lollin{" "}
-//             </button>
-//           </section>
-//         </div>
-
-//         <section className="tierWrapper">
-//           <Tier historyData={historyData}></Tier>
-//         </section>
-
-//         <section>
-
-//           <div> 존재하지 않은 유저입니다.</div>
-//         </section>
-//       </Container>
-//     );
-//     break;
-//   }
-
-//   case false: {
-//     return (
-//       <Container>
-//         <div className="topWrap">
-//           <div className="name">{summonerResult}</div>
-
-//           <section className="searchArea">
-//             <input
-//               type="text"
-//               className="searchInput"
-//               placeholder="소환사 검색.."
-//               onChange={handleInputVal}
-//               onKeyPress={handleInputVal}
-//             />
-//             <button className="searchBtn" onClick={handleSearchName}>
-//               Lollin{" "}
-//             </button>
-//           </section>
-//         </div>
-
-//         <section className="tierWrapper">
-//           <Tier historyData={historyData}></Tier>
-//         </section>
-
-//         <section>
-//           <History historyData={historyData}></History>
-//         </section>
-//       </Container>
-//     );
-
-//     break;
-//   }
-
-//   case true: {
-//     //로딩
-//     return (
-//       <Container>
-//         <div className="topWrap">
-//           <div className="name">{summonerResult}</div>
-
-//           <section className="searchArea">
-//             <input
-//               type="text"
-//               className="searchInput"
-//               placeholder="소환사 검색.."
-//               onChange={handleInputVal}
-//               onKeyPress={handleInputVal}
-//             />
-//             <button className="searchBtn" onClick={handleSearchName}>
-//               Lollin{" "}
-//             </button>
-//           </section>
-//         </div>
-
-//         <section className="tierWrapper">
-//           <Tier historyData={historyData}></Tier>
-//         </section>
-
-//         <section>
-//           <div> loading .. </div>
-//         </section>
-//       </Container>
-//     );
-
-//     break;
-//   }

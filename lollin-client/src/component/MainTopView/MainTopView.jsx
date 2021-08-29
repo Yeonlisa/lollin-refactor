@@ -35,13 +35,6 @@ const MainSearchBox = () => {
         <div className="foreGroundInner">
           <div className="foreGroundRow-Top">
             <div className="foreGroundLogo">
-              {/* <div className="foreGroundText">
-                사랑받는 롤린이의 교과서, Lollin
-              </div> */}
-
-              {/* <button className="foreGroundbutton" onClick={scrollMove}>
-                Click me!
-              </button> */}
               <div className="foreGroundBtn" onClick={scrollMove}>
                 <LollinBtn />
               </div>

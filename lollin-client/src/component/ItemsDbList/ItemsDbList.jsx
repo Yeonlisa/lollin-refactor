@@ -1,7 +1,6 @@
 import React from "react";
 import { ItemBox, ItemsList, ItemName } from "./ItemsDbListStyled.jsx";
 
-// const server = process.env.REACT_APP_SERVER_URL;
 
 const ItemsDbList = ({ itemsData, apiVer, sortTags, itemName }) => {
   const copyTags = [...sortTags];

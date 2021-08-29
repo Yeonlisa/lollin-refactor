@@ -12,7 +12,6 @@ export const Container = styled.div`
     width: 327px;
     height: 120px;
     padding: 9px 0;
-    /* border: 1px solid #808080b0; */
     border-bottom: none;
   }
 
@@ -32,13 +31,11 @@ export const Container = styled.div`
   }
   .rankTag {
     font-size: 11px;
-    /* color: #6e7777; */
     color: whitesmoke;
   }
   .tierTag {
     font-size: 15px;
     font-weight: bold;
-    /* color: #1f8ecd; */
     color: whitesmoke;
   }
 

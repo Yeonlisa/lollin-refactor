@@ -1,21 +1,11 @@
 import styled from "styled-components";
 
 export const TopView = styled.div`
-  /* @font-face {
-    font-family: "Bazzi";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-  } */
-
   position: relative;
   display: block;
   box-sizing: border-box;
   min-height: 20.5rem;
-  /* 31.25rem; */
   padding: 3.75rem;
-
   height: 31rem;
   z-index: 1;
 
@@ -31,7 +21,6 @@ export const TopView = styled.div`
     max-width: 95rem;
     height: 30rem;
     min-height: 300px;
-    /* 31.25rem; */
     margin: 0px auto;
     top: 0rem;
   }
@@ -153,7 +142,6 @@ export const TopView = styled.div`
       font-family: Bazzi;
     }
   }
-  /* Bazzi,  */
   .foreGroundRow-bottom {
     width: 100%;
     margin-top: 0.625rem;

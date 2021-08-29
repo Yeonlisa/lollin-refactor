@@ -41,7 +41,7 @@ export const SearchBox = styled.section`
       font-size: 0px;
     }
   }
-  /* rgb(0 0 0/ 90%) */
+
   .searchBoxSearchBtn {
     display: flex;
     position: absolute;

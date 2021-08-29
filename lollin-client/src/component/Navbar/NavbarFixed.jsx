@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Nav,
-  Logo,
+  HeadLogo,
   NavLink,
   Bars,
   NavMenu,
@@ -26,7 +26,7 @@ const Navbar = ({
     <>
       <Nav>
         <Bars onClick={toggle} />
-        <Logo to="/" />
+        <HeadLogo to="/" />
         <NavMenu>
           <NavLink to="/userinfo">User Info</NavLink>
           <NavLink to="/items/all">Item DB</NavLink>

@@ -17,7 +17,7 @@ import Myinfo from "./pages/User/MyInfo";
 
 import ScrollToTop from "./Scroll/ScrollToTop";
 
-const server = process.env.REACT_APP_SERVER_URL;
+// const server = process.env.REACT_APP_SERVER_URL;
 function App() {
   let history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
