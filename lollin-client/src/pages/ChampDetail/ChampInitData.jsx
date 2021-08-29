@@ -10,7 +10,7 @@ export const initData = {
     "아트록스가 궁극기를 사용하면 부활하지 못하도록 거리를 유지하세요.",
   ],
   id: "Aatrox",
-  img: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+  img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
   skills: [
     {
       id: "AatroxQ",
@@ -238,11 +238,11 @@ export const initData = {
     },
   ],
   skillsimg: [
-    "http://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxQ.png",
-    "http://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxW.png",
-    "http://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxE.png",
-    "http://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxR.png",
-    "http://ddragon.leagueoflegends.com/cdn/11.11.1/img/passive/Aatrox_Passive.png",
+    "https://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxQ.png",
+    "https://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxW.png",
+    "https://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxE.png",
+    "https://ddragon.leagueoflegends.com/cdn/11.11.1/img/spell/AatroxR.png",
+    "https://ddragon.leagueoflegends.com/cdn/11.11.1/img/passive/Aatrox_Passive.png",
   ],
   skillwebm: [
     "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0266/ability_0266_P1.webm",

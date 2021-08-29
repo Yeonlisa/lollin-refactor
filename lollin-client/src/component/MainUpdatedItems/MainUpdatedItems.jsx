@@ -31,7 +31,6 @@ const MainUpdatedItems = ({ history }) => {
   useEffect(() => {
     axios
       .get(`${server}/utils/patchnote`)
-      // .get(`${server}/items/patched2`)
       .then((res) => {
         setNewItemData(res.data);
         console.log("업데이트 아이템  : ", res);
@@ -65,8 +64,6 @@ const MainUpdatedItems = ({ history }) => {
       <div className="updatedItem">
         <img className="itemContent" src={newItemData} alt="nodata" />
       </div>
-
-      {/* {handleItemHtml()} */}
     </UpdatedItems>
   );
 };

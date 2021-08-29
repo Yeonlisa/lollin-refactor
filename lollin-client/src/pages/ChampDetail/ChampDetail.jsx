@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { initData } from "./ChampInitData.jsx";
 import {
   ChampDetailArea,

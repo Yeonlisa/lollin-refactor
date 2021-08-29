@@ -158,7 +158,7 @@ const UserInfoMatching = ({ summonerName, setDefaultPlayer }) => {
                       <div className="stylePlayer allyPlayer">
                         <img
                           className="playerImg"
-                          src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${el.championName}_0.jpg`}
+                          src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${el.championName}_0.jpg`}
                           alt="no data"
                         />
                       </div>
@@ -184,7 +184,7 @@ const UserInfoMatching = ({ summonerName, setDefaultPlayer }) => {
                       <div className="stylePlayer oppPlayer">
                         <img
                           className="playerImg"
-                          src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${el.championName}_0.jpg`}
+                          src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${el.championName}_0.jpg`}
                           alt="no data"
                         />
                       </div>
@@ -225,19 +225,5 @@ const UserInfoMatching = ({ summonerName, setDefaultPlayer }) => {
     </Container>
   );
 };
-//http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg
-export default UserInfoMatching;
 
-{
-  /* Matching
-      {matchData.participants
-        ? matchData.participants.map((el) => {
-            return (
-              <img
-                src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${el.championName}_0.jpg`}
-                width="70px"
-              ></img>
-            );
-          })
-        : ""} */
-}
+export default UserInfoMatching;

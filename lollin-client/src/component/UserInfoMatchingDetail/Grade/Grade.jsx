@@ -80,17 +80,6 @@ const UserInfoGrade = ({ participant }) => {
 		<Container>
 			<section className="gradeWrap">
 				<div className="gradeIconWrap">
-					{/* <img
-            // src={require(`../../../Images/gradeIcons/${userGrade}.png`).default}
-            src={require(`../../../Images/gradeIcons/VERYBAD.png`).default}
-            alt=""
-            className="gardeIconImg"
-          /> */}
-					{/* <img
-            src={GradeIcon}
-            alt=""
-            className="gardeIconImg"
-          /> */}
 					<img
 						src={GradeIcon({ score: userGrade })}
 						alt=""

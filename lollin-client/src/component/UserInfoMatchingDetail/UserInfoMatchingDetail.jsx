@@ -64,21 +64,8 @@ const MatchingDetail = ({ participant }) => {
         <Container>
           <section className="style">
             <div className="wrap">
-              {/* {participant !== null ? (
-                <div>{participant.summonerName}</div>
-              ) : (
-                "     "
-              )} */}
               <div className="content">{"Loading..."}</div>
             </div>
-
-            {/* <button
-              onClick={() => {
-                setIsLoading(null);
-              }}
-            >
-              close
-            </button> */}
           </section>
         </Container>
       );
@@ -122,14 +109,6 @@ const MatchingDetail = ({ participant }) => {
               </section>
             </div>
             <Grade participant={participant} />
-
-            {/* <button
-              onClick={() => {
-                setIsLoading(null);
-              }}
-            >
-              close
-            </button> */}
           </section>
         </Container>
       );

@@ -7,7 +7,6 @@ import ItemsDbBgi from "../../Images/ItemsDbBgi1.jpg";
 
 import { Items, ItemTitle, BackImg, Wrapper } from "./ItemsDbStyled.jsx";
 
-// const server = process.env.REACT_APP_SERVER_URL;
 
 const ItemsDB = () => {
   const [apiVer, setApiVer] = useState("");
