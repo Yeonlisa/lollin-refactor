@@ -131,7 +131,7 @@ const ChampDetail = ({ champPriId }) => {
       {isLoading ? (
         <div>
           {champImg ? (
-            <BackImg className="champDbBackImg" src={champImg} />
+            <BackImg className="champDbBackImg" src={champImg} alt="error" />
           ) : (
             "noData"
           )}
@@ -139,7 +139,7 @@ const ChampDetail = ({ champPriId }) => {
             <RenderArea className="renderWrapper">
               <ChampName className="champDetailNameArea">
                 {champImg ? (
-                  <ChampDetailImg className="champDetailImg" src={champImg} />
+                  <ChampDetailImg className="champDetailImg" src={champImg} alt="error" />
                 ) : (
                   <div className="champDetailImgAlt" />
                 )}
@@ -181,6 +181,7 @@ const ChampDetail = ({ champPriId }) => {
                   <ChampSkillWeb
                     className={idx === skillIndex ? "isDisplay" : "noDisplay"}
                     src={ele}
+                    alt="error"
                     width="480px"
                     muted
                     autoPlay
